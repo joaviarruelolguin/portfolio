@@ -109,7 +109,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
           <div class="flex flex-col items-center justify-between gap-4 sm:flex-row">
             <p class="font-mono text-sm font-bold">&lt;JV /&gt;</p>
             <p class="text-sm text-muted dark:text-nightmuted">
-              &copy; {{ currentYear() }} — Hecho con Angular, Signals y Tailwind
+              &copy; {{ currentYear() }} — Hecho con Angular y Tailwind
             </p>
           </div>
         </div>
