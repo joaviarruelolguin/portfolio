@@ -3,12 +3,19 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "tailwind": "tailwindcss -i ./src/styles.input.css -o ./src/styles.css --minify",
+    "tailwind:dev": "tailwindcss -i ./src/styles.input.css -o ./src/styles.css --watch",
+    "prestart": "npm run tailwind",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "npm run tailwind && ng build",
+    "dev": "concurrently \"npm:tailwind:dev\" \"npm:start\" --kill-others --names tailwind,angular",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
   "private": true,
+  "engines": {
+    "node": "22.x"
+  },
   "packageManager": "npm@10.9.8",
   "dependencies": {
     "@angular/common": "^22.2.0",
@@ -24,7 +31,10 @@
     "@angular/build": "^22.2.2",
     "@angular/cli": "^22.2.2",
     "@angular/compiler-cli": "^22.2.0",
+    "@tailwindcss/cli": "^4.3.3",
+    "concurrently": "^10.0.6",
     "prettier": "^3.8.1",
+    "tailwindcss": "^4.3.3",
     "typescript": "~6.0.2"
   }
 }
