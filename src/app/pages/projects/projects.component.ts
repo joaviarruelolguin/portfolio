@@ -121,15 +121,6 @@ export class ProjectsComponent {
       repoUrl: 'https://github.com/joaviarruelolguin/lol-squad',
     },
     {
-      id: '7',
-      title: 'Maps for Nerds',
-      description:
-        'Prototipo de app de mapas interactivo con lugares arqueológicos, culturales, reservas naturales e históricos — web + APK desde una sola codebase (Angular zoneless + Ionic + Leaflet). En desarrollo.',
-      image: '',
-      tags: ['Angular', 'Ionic', 'Leaflet', 'Tailwind', 'Capacitor'],
-      repoUrl: 'https://github.com/joaviarruelolguin/maps-for-nerds',
-    },
-    {
       id: '8',
       title: 'Super De Todo',
       description:
