@@ -83,6 +83,7 @@ export class ProjectsComponent {
       image: '',
       tags: ['Angular', 'TypeScript', 'Tailwind', 'Firebase'],
       liveUrl: 'https://my-stock-2.web.app/login',
+      repoUrl: 'https://github.com/joaviarruelolguin/my-stock',
     },
     {
       id: '3',
