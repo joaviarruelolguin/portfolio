@@ -82,7 +82,6 @@ export class ProjectsComponent {
         'App de inventario: productos, stock, ventas y comprobantes en PDF. Sección de finanzas con gráficos, control de egresos y múltiples usuarios.',
       image: '',
       tags: ['Angular', 'TypeScript', 'Tailwind', 'Firebase'],
-      liveUrl: 'https://my-stock-2.web.app/login',
       repoUrl: 'https://github.com/joaviarruelolguin/my-stock',
     },
     {
