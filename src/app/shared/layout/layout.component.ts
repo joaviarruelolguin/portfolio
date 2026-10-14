@@ -7,7 +7,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
   template: `
     <div class="min-h-screen bg-ivory dark:bg-night text-ink dark:text-nightink">
       <!-- ── Header ── -->
-      <header class="fixed inset-x-0 top-0 z-50 border-b border-line/70 dark:border-nightline/70 bg-ivory/80 dark:bg-night/80 backdrop-blur-md">
+      <header class="site-header fixed inset-x-0 top-0 z-50 border-b border-line/70 dark:border-nightline/70 bg-ivory/80 dark:bg-night/80 backdrop-blur-md">
         <div class="mx-auto flex h-16 max-w-6xl items-center justify-between px-6 md:px-12">
           <a routerLink="" class="font-mono text-lg font-bold tracking-tight">
             &lt;JV /&gt;
@@ -17,7 +17,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
             @for (item of NAV_ITEMS; track item.path) {
               <a
                 routerLink="{{ item.path }}"
-                routerLinkActive="text-ink dark:text-nightink"
+                routerLinkActive="nav-active"
                 [routerLinkActiveOptions]="{ exact: item.path === '' }"
                 class="text-sm font-medium text-muted dark:text-nightmuted transition-colors hover:text-ink dark:hover:text-nightink"
               >
@@ -79,7 +79,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
             @for (item of NAV_ITEMS; track item.path) {
               <a
                 routerLink="{{ item.path }}"
-                routerLinkActive="text-ink dark:text-nightink"
+                routerLinkActive="nav-active"
                 [routerLinkActiveOptions]="{ exact: item.path === '' }"
                 class="block py-2.5 text-sm font-medium text-muted dark:text-nightmuted transition-colors hover:text-ink dark:hover:text-nightink"
                 (click)="closeMenu()"
@@ -158,5 +158,14 @@ export class Layout {
   @HostListener('document:keydown.escape')
   onEscape(): void {
     this.closeMenu();
+  }
+
+  /** Cierra el menú mobile al hacer click fuera del header/menú. */
+  @HostListener('document:click', ['$event'])
+  onDocumentClick(event: Event): void {
+    const target = event.target as HTMLElement | null;
+    if (target && !target.closest('.site-header')) {
+      this.closeMenu();
+    }
   }
 }

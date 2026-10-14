@@ -107,3 +107,15 @@
 ::-webkit-scrollbar-thumb:hover {
   background-color: color-mix(in srgb, var(--color-ink) 32%, transparent);
 }
+
+/* ── Navbar: sección activa ──
+   A propósito FUERA de @layer: las utilidades de Tailwind (text-muted)
+   viven en @layer utilities y este bloque sin capa les gana en la cascada.
+   Si lo metieras en una capa, text-muted vuelve a tapar el resaltado. */
+.nav-active {
+  color: var(--color-ink);
+  font-weight: 600;
+}
+.dark .nav-active {
+  color: var(--color-nightink);
+}
