@@ -16,7 +16,7 @@ import { RouterLink } from '@angular/router';
       <div class="mt-8 space-y-5 text-lg leading-relaxed text-muted dark:text-nightmuted">
         <p>
           Hola. Soy <span class="font-semibold text-ink dark:text-nightink">Joaquín Viarruel</span>,
-          desarrollador web full stack orientado a Angular y Supabase. Actualmente
+          desarrollador web full stack orientado a Angular y PostgreSQL. Actualmente
           construyo <span class="font-semibold text-ink dark:text-nightink">GestiAll</span>,
           una plataforma SaaS multi-tenant de gestión para clubes, gimnasios y academias.
         </p>

@@ -32,15 +32,23 @@ import { RouterLink } from '@angular/router';
               Hola, soy<br />Joaquín Viarruel
             </h1>
 
+            <!-- Titular con keywords que buscan los reclutadores -->
+            <h2
+              class="animate-fade-in-up mt-4 text-lg font-medium tracking-tight sm:text-xl"
+              style="animation-delay: 120ms"
+            >
+              <span class="text-muted dark:text-nightmuted">Desarrollador Full Stack</span>
+              <span class="text-ink dark:text-nightink"> — Angular · Node.js · PostgreSQL · TypeScript</span>
+            </h2>
+
             <p
               class="animate-fade-in-up mt-6 max-w-xl text-lg leading-relaxed text-muted dark:text-nightmuted"
               style="animation-delay: 160ms"
             >
-              Desarrollador web full stack orientado a Angular y Supabase, y docente
-              virtual en herramientas digitales. Construyo
+              Soy docente virtual en herramientas digitales y desarrollo freelance de
+              punta a punta. Actualmente construyo
               <span class="font-semibold text-ink dark:text-nightink">GestiAll</span>,
-              una plataforma SaaS multi-tenant para clubes y academias, y desarrollo
-              freelance de punta a punta.
+              una plataforma SaaS multi-tenant para clubes y academias.
             </p>
 
             <div
@@ -96,7 +104,7 @@ import { RouterLink } from '@angular/router';
                 <div>
                   <p class="font-semibold text-ink dark:text-nightink">Full Stack</p>
                   <p class="text-sm text-muted dark:text-nightmuted">
-                    Angular · Supabase · Node.js
+                    Angular · PostgreSQL · Node.js
                   </p>
                 </div>
               </div>
@@ -130,7 +138,7 @@ export class HomeComponent {
   BENTO = [
     { mono: 'An', label: 'Angular', sub: 'standalone · zoneless', bg: 'bg-accent/15 dark:bg-accentlight/15 text-accent dark:text-accentlight' },
     { mono: 'TS', label: 'TypeScript', sub: 'tipado estricto', bg: 'bg-sky-500/15 text-sky-600 dark:text-sky-400' },
-    { mono: 'SB', label: 'Supabase', sub: 'PostgreSQL + RLS', bg: 'bg-emerald-500/15 text-emerald-600 dark:text-emerald-400' },
+    { mono: 'PG', label: 'PostgreSQL', sub: 'RLS + auth', bg: 'bg-emerald-500/15 text-emerald-600 dark:text-emerald-400' },
     { mono: 'TW', label: 'Tailwind', sub: 'utility-first CSS', bg: 'bg-rose-500/15 text-rose-600 dark:text-rose-400' },
   ];
 }
