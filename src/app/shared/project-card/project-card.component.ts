@@ -47,7 +47,7 @@ export interface Project {
       <h3 class="text-lg font-semibold tracking-tight text-ink dark:text-nightink">
         {{ project().title }}
       </h3>
-      <p class="mt-2 line-clamp-2 text-sm leading-relaxed text-muted dark:text-nightmuted">
+      <p class="mt-2 text-sm leading-relaxed text-muted dark:text-nightmuted">
         {{ project().description }}
       </p>
 
