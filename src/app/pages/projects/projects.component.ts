@@ -85,6 +85,15 @@ export class ProjectsComponent {
           tags: ['Next.js', 'TypeScript', 'Tailwind', 'Supabase', 'Riot API', 'Open Source'],
           repoUrl: 'https://github.com/joaviarruelolguin/lol-squad',
         },
+        {
+          id: '7',
+          title: 'Huellas Originarias',
+          description:
+            'App educativa interactiva que muestra la evolución de las comunidades indígenas argentinas en 7 momentos históricos (~12.000 AC – Presente). Mapa de Argentina con visualización de migraciones (Leaflet + d3-delaunay), fichas por comunidad con imágenes, modo de vida y fuentes. En desarrollo activo, contenido en revisión por antropólogos.',
+          image: '',
+          tags: ['Angular', 'TypeScript', 'Ionic', 'Capacitor', 'Leaflet', 'Tailwind', 'Open Source'],
+          repoUrl: 'https://github.com/joaviarruelolguin/huellas-originarias',
+        },
       ],
     },
     {
