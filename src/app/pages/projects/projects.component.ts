@@ -119,19 +119,5 @@ export class ProjectsComponent {
         },
       ],
     },
-    {
-      title: 'Académico',
-      projects: [
-        {
-          id: '8',
-          title: 'Super De Todo',
-          description:
-            'Proyecto de la facultad: ejercicio de programación en Java con Maven, realizado durante la Tecnicatura en Desarrollo de Software.',
-          image: '',
-          tags: ['Java', 'Maven'],
-          repoUrl: 'https://github.com/joaviarruelolguin/TP6-LAB1',
-        },
-      ],
-    },
   ];
 }
