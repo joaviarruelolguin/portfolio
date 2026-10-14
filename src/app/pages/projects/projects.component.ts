@@ -82,7 +82,7 @@ export class ProjectsComponent {
           description:
             'Dashboard de League of Legends para un grupo de amigos: ranks, MVP semanal, análisis de partidas Flex con Coach IA, sinergias, premios y liga de customs — todo con datos reales de la API de Riot. Proyecto open source (MIT).',
           image: '',
-          tags: ['Next.js', 'TypeScript', 'Tailwind', 'Supabase', 'Riot API', 'Open Source'],
+          tags: ['Next.js', 'TypeScript', 'Tailwind', 'Supabase', 'Riot API', 'Gemini API', 'Open Source'],
           repoUrl: 'https://github.com/joaviarruelolguin/lol-squad',
         },
         {
